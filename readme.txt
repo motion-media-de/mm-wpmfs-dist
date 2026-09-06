@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.1.2
+Stable tag:        0.1.3
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ord
 
 == Changelog ==
 
+= 0.1.3 =
+* Die Update-Prüfung schreibt keine Fehlermeldung mehr ins Debug-Log, wenn sie eine Datei abfragt, die es im Auslieferungs-Repository absichtlich nicht gibt. Bisher entstanden dabei bei jeder Prüfung zwei irreführende Zeilen.
+* Der geteilte Update-Code trägt wieder eine neue Versionsnummer, weil sich sein Verhalten geändert hat. Ohne das würde in einer Installation mit mehreren Plugins der Familie die älteste Kopie gewinnen und die Korrektur wäre wirkungslos.
+
 = 0.1.2 =
 * Plugin-Symbol und -Banner werden jetzt an WordPress gemeldet und erscheinen in der Plugin-Liste und im „Details ansehen"-Dialog. Vorläufige Grafiken, bis endgültiges Material vorliegt.
 * Der geteilte Update-Code trägt eine neue Versionsnummer. Ohne sie hätte die älteste installierte Kopie das Verhalten aller Plugins der Familie bestimmt.
@@ -72,6 +76,9 @@ Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ord
 * Fehlender Build wird im Debug-Betrieb als Hinweis gemeldet, statt Blöcke stillschweigend wegzulassen.
 
 == Upgrade Notice ==
+
+= 0.1.3 =
+Wartungsrelease. Kein Handlungsbedarf.
 
 = 0.1.2 =
 Bringt Symbole und Banner mit. Damit sie überall greifen, sollten alle Plugins der Familie aktualisiert werden.
