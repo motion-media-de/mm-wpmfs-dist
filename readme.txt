@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.1.0
+Stable tag:        0.1.1
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ord
 
 == Changelog ==
 
+= 0.1.1 =
+* Der Hinweis auf ein unvollständiges Paket wird nicht mehr über die Textdomain des Core übersetzt. Die Datei liegt in allen Plugins der Familie, eine feste Domain wäre dort die falsche gewesen.
+
 = 0.1.0 =
 * Erste Fassung: Mobile-First-Editor-Umschalter, Theme-Token-Bridge, Blöcke Floating CTA und Mobile Cards.
 * Editor-UX auf General/Style/Advanced umgestellt, Style-Controls an Tokens gebunden.
@@ -65,6 +68,9 @@ Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ord
 * Fehlender Build wird im Debug-Betrieb als Hinweis gemeldet, statt Blöcke stillschweigend wegzulassen.
 
 == Upgrade Notice ==
+
+= 0.1.1 =
+Wartungsrelease. Kein Handlungsbedarf.
 
 = 0.1.0 =
 Erste Fassung.
