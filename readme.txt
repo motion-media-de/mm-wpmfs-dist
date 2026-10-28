@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.3
+Stable tag:        0.3.4
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,13 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.4 =
+* Timeline: Der Stil-Tab ist aufgeräumt — sechs aufklappbare Bereiche (Karten, Linie und Markierungen, Typografie, Bild, Navigation, Abstände), die Farben stehen beim jeweiligen Element.
+* Timeline: Schriftgröße für Datum, Überschrift und Text pro Gerät, mit den Größen des Themes oder einem eigenen Wert. Ohne Einstellung bleibt die Theme-Größe.
+* Behoben: Auf Seiten mit Smooth-Scroll-Skripten (etwa vom Hoster) ließ sich die Timeline mit Trackpad bzw. Shift + Mausrad nicht seitlich scrollen.
+* Behoben: Unter dem Zeiger zur Markierung blieb je nach Fensterbreite eine Haarlinie.
+* Editor: Reiter mit durchgehender Trennlinie wie in Astra/Spectra; Klapp-Pfeile wie bei den Core-Panels.
 
 = 0.3.3 =
 * Behoben: Der Zeiger zur Markierung hing bei der Linie über den Karten zur Hälfte über die Kartenecke. Mit Zeiger rücken Markierungen und Linie jetzt bündig mit dem Datum an die Inhaltskante der Karte; der Zeiger liegt vollständig auf der Karte.
