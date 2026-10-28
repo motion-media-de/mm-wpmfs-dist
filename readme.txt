@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.2
+Stable tag:        0.3.3
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.3 =
+* Behoben: Der Zeiger zur Markierung hing bei der Linie über den Karten zur Hälfte über die Kartenecke. Mit Zeiger rücken Markierungen und Linie jetzt bündig mit dem Datum an die Inhaltskante der Karte; der Zeiger liegt vollständig auf der Karte.
 
 = 0.3.2 =
 * Timeline: Optionaler Zeiger zur Markierung — eine kleine Spitze an der Karte zeigt auf ihren Punkt, nach oben bei Linie über den Karten, nach links bei gestapelten Einträgen. Farbe frei wählbar.
