@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.0
+Stable tag:        0.3.1
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.1 =
+* Nach einem Update laden Browser und Caches jetzt die neuen Stylesheets der Blöcke. Bisher blieb deren Adresse gleich, und alte CSS-Dateien konnten bis zu 30 Tage weiter angezeigt werden — neue Einstellungen wie Ecken, Abstände oder Schatten schienen dann wirkungslos.
+* Timeline: Die Leiste lässt sich mit gedrückter Maustaste ziehen, wie auf dem Handy wischen. Beim Loslassen rastet sie am nächsten Eintrag ein; ein Ziehen löst keinen Link aus.
 
 = 0.3.0 =
 * Timeline: Der Stil-Tab bekommt Regler wie in Gutenberg und Spectra, je Gerät einstellbar und vom Handy aufwärts vererbt — Bildecken, Innenabstand, Rahmen, Radius und Schatten der Box sowie der Abstand zwischen den Einträgen. Ohne Einstellung gelten die globalen Werte aus Astra.
