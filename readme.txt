@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.4
+Stable tag:        0.3.5
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,9 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.5 =
+* Timeline: Die Eintragshöhe ist pro Gerät einstellbar — etwa auf dem Handy „Nach Inhalt“, auf dem Desktop „Gleich hoch“. Bestehende Timelines behalten ihren Wert.
 
 = 0.3.4 =
 * Timeline: Der Stil-Tab ist aufgeräumt — sechs aufklappbare Bereiche (Karten, Linie und Markierungen, Typografie, Bild, Navigation, Abstände), die Farben stehen beim jeweiligen Element.
