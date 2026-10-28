@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.2.0
+Stable tag:        0.3.0
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,16 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.0 =
+* Timeline: Der Stil-Tab bekommt Regler wie in Gutenberg und Spectra, je Gerät einstellbar und vom Handy aufwärts vererbt — Bildecken, Innenabstand, Rahmen, Radius und Schatten der Box sowie der Abstand zwischen den Einträgen. Ohne Einstellung gelten die globalen Werte aus Astra.
+* Navigation: Position pro Gerät (unten links, mittig oder rechts, seitlich mittig oder auf Höhe der Markierungen), Größe S/M/L pro Gerät, Stil Gefüllt/Umriss/Nur Pfeil, Form Rund/Abgerundet/Eckig und eigene Farben. Die Standardfarben kommen aus Astra; die Tippfläche bleibt auch bei kleinen Pfeilen 48px groß.
+* Endlos-Lauf zurück zum Anfang und automatisches Weiterlaufen mit Pause-Knopf, das bei Maus oder Fokus auf der Zeitleiste anhält.
+* Linie und Markierungen sind einfärbbar, optional mit Fortschritt beim Scrollen: Was ins Bild kommt, nimmt die aktive Farbe an.
+* Farben für Box-Hintergrund, Datum, Überschrift und Text.
+* Editor: eigener Knopf „+ Eintrag hinzufügen“ unter der Leiste, Vorschau folgt dem gewählten Gerät, Gerätesymbole stellen die Vorschau um, Blocktitel und -beschreibungen auf Deutsch.
+* Einträge sind immer gleich breit, auch mit breitem Bild oder viel Innenabstand.
+* Hinweis: Die Pfeile bestehender Timelines erscheinen jetzt in der Astra-Primärfarbe statt grau-weiß.
 
 = 0.2.0 =
 * Neuer Block „Timeline": eine seitwärts laufende Zeitleiste. Auf dem Handy wischt man von Eintrag zu Eintrag, auf größeren Bildschirmen stehen mehrere nebeneinander — die Leserichtung bleibt dabei immer waagerecht, weil sie die Chronologie trägt.
