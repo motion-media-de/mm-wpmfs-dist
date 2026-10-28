@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.1.3
+Stable tag:        0.2.0
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,7 +15,7 @@ Der Block-Editor öffnet in der Mobil-Vorschau, dazu ein paar mobil-native Blöc
 Kein Page Builder und keine Block-Sammlung, sondern zwei gezielte Dinge, die Astra und Gutenberg nicht mitbringen:
 
 1. **Mobile-First-Editing** — der Block-Editor öffnet in der Mobil-Vorschau und ist pro Nutzer auf „Desktop First" (WordPress-Standard) umschaltbar. Mobil ist die Voreinstellung, bis man sie ändert.
-2. **Mobil-native Blöcke**, die es so nicht gibt — **Floating CTA** (klebrige Aktionsleiste im Daumenbereich) und **Mobile Cards** (Swipe-Karten mobil, Grid am Desktop).
+2. **Mobil-native Blöcke**, die es so nicht gibt — **Floating CTA** (klebrige Aktionsleiste im Daumenbereich), **Mobile Cards** (Swipe-Karten mobil, Grid am Desktop) und **Timeline** (seitwärts laufende Zeitleiste zum Durchwischen).
 
 = Grundsatz =
 
@@ -25,6 +25,7 @@ Das Theme bestimmt das Aussehen, das Toolkit bringt das Mobile-First-Verhalten. 
 
 * `mm-wpmfs/floating-cta` — Aktionsleiste, die mobil im Daumenbereich klebt. Varianten Bar und Pill, Einblendung sofort oder nach Scroll-Schwelle, ausblendbar pro Gerät.
 * `mm-wpmfs/cards` und `mm-wpmfs/card` — Karten, die mobil gewischt und am Desktop als Grid dargestellt werden. Spaltenzahl responsiv, Kartenstil und Schatten an Design-Tokens gebunden.
+* `mm-wpmfs/timeline` und `mm-wpmfs/timeline-item` — Zeitleiste, die auf jeder Bildschirmbreite seitwärts läuft; nur die Zahl der sichtbaren Einträge wächst mit. Markierung als Punkt, Nummer oder gar nicht, rund oder eckig, Linie innerhalb oder oberhalb der Karten, drei Eintragsstile, wahlweise auf dem Handy untereinander.
 
 = Editor-Bedienung =
 
@@ -58,8 +59,15 @@ Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ord
 
 == Changelog ==
 
+= 0.2.0 =
+* Neuer Block „Timeline": eine seitwärts laufende Zeitleiste. Auf dem Handy wischt man von Eintrag zu Eintrag, auf größeren Bildschirmen stehen mehrere nebeneinander — die Leserichtung bleibt dabei immer waagerecht, weil sie die Chronologie trägt.
+* Jeder Eintrag bringt Datum, Überschrift, Text sowie wahlweise Bild und Link mit. Das angezeigte Datum und das maschinenlesbare sind getrennt, damit „Frühjahr 2019" möglich bleibt, ohne das Datum für Suchmaschinen zu verlieren.
+* Zur Wahl stehen Punkte, fortlaufende Nummern oder gar keine Markierung, rund oder eckig, dazu drei Eintragsstile und eine Variante, die auf dem Handy untereinander statt nebeneinander läuft.
+* Die Linie kann innerhalb der Karte verlaufen oder oberhalb davon — bei der zweiten Variante stehen Markierung und Linie frei über den Karten. Sie liegt dabei immer hinter den Markierungen. Untereinander gestapelt läuft sie stets neben den Karten, weil sie sonst deren Ränder kreuzen müsste, um zur nächsten Markierung zu kommen.
+* Die Eintragshöhe richtet sich wahlweise nach dem eigenen Inhalt oder nach dem längsten Eintrag. Voreingestellt ist der eigene Inhalt: sonst erbt jeder Eintrag die Höhe des längsten der ganzen Leiste, und auf dem Handy, wo nur ein Eintrag im Bild steht, bleibt darunter viel leere Fläche.
+
 = 0.1.3 =
-* Die Update-Prüfung schreibt keine Fehlermeldung mehr ins Debug-Log, wenn sie eine Datei abfragt, die es im Auslieferungs-Repository absichtlich nicht gibt. Bisher entstanden dabei bei jeder Prüfung zwei irreführende Zeilen.
+* Die Update-Prüfung schreibt keine Fehlermeldung mehr ins Debug-Log, wenn sie eine Datei abfragt, die es im Auslieferungs-Repository absichtlich nicht gibt. Diese Zeilen sahen wie ein Fehler aus, waren aber erwartet.
 * Der geteilte Update-Code trägt wieder eine neue Versionsnummer, weil sich sein Verhalten geändert hat. Ohne das würde in einer Installation mit mehreren Plugins der Familie die älteste Kopie gewinnen und die Korrektur wäre wirkungslos.
 
 = 0.1.2 =
