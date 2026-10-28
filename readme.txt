@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.1
+Stable tag:        0.3.2
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,12 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.2 =
+* Timeline: Optionaler Zeiger zur Markierung — eine kleine Spitze an der Karte zeigt auf ihren Punkt, nach oben bei Linie über den Karten, nach links bei gestapelten Einträgen. Farbe frei wählbar.
+* Timeline: Außenabstand des ganzen Moduls pro Gerät (oben/unten, links/rechts). Ohne Einstellung bleibt der Abstand des Themes.
+* Behoben: Auf Seiten, deren Theme Listen und Absätze im Inhalt mit eigenen Abständen versieht (Astra), saßen die Pfeile zu hoch und der Text bekam zusätzlichen Abstand.
+* Behoben: Rahmenfarben aus der Astra-Palette kamen auf der Website nicht an.
 
 = 0.3.1 =
 * Nach einem Update laden Browser und Caches jetzt die neuen Stylesheets der Blöcke. Bisher blieb deren Adresse gleich, und alte CSS-Dateien konnten bis zu 30 Tage weiter angezeigt werden — neue Einstellungen wie Ecken, Abstände oder Schatten schienen dann wirkungslos.
