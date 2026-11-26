@@ -4,7 +4,7 @@ Tags:              mobile, mobile-first, blocks, editor, gutenberg
 Requires at least: 6.5
 Tested up to:      7.0
 Requires PHP:      7.4
-Stable tag:        0.3.5
+Stable tag:        0.3.6
 License:           GPLv2 or later
 License URI:       https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -58,6 +58,10 @@ Nein. Es liest Theme-Werte und leitet daraus Komponenten-Tokens ab. Wo das Theme
 Ja. Jedes Plugin der Familie läuft eigenständig. Ist dieses Toolkit aktiv, ordnen sich die Blöcke der anderen Produkte in dieselbe Kategorie ein.
 
 == Changelog ==
+
+= 0.3.6 =
+* Timeline: Neue Darstellung „Vertikal“ (von oben nach unten), pro Gerät wählbar neben „Seitwärts“. Die bisherige Einstellung „Auf dem Handy untereinander“ wird übernommen.
+* Timeline: Seitenverhältnis der Bilder einstellbar (Original, 16:9, 16:10, 3:2, 4:3, 1:1) und Skalierung „Formatfüllend“ oder „Einpassen“, damit Bilder nicht mehr abgeschnitten werden. Standard bleibt 16:10.
 
 = 0.3.5 =
 * Timeline: Die Eintragshöhe ist pro Gerät einstellbar — etwa auf dem Handy „Nach Inhalt“, auf dem Desktop „Gleich hoch“. Bestehende Timelines behalten ihren Wert.
